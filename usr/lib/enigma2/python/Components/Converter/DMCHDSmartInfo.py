@@ -12,7 +12,7 @@ from Poll import Poll
 
 
 
-class SmartInfo(Poll, Converter, object):
+class DMCHDSmartInfo(Poll, Converter, object):
 	SMART_INFO_H = 1
 	def __init__(self, type):
 		Converter.__init__(self, type)
