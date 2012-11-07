@@ -234,7 +234,7 @@
     <eLabel text="dB" position="973,135" size="30,20" font="Regular;18" foregroundColor="grey" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="SecondInfoBar" position="center,10" size="1280,503" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-    <eLabel position="center,0" zPosition="-1" size="1200,500" backgroundColor="un33050505" />
+    <ePixmap position="center,0" zPosition="-1" size="1280,503" pixmap="Lava/menu/secondinfobar back.png" />
     <eLabel name="snr" position="555,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/XTPanel/pictures/bar_snr.png" position="630,45" size="410,20" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
@@ -3060,6 +3060,37 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_green" position="433,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/key_menu.png" position="669,508" zPosition="2" size="50,40" alphatest="on" />
   </screen>
+  <screen name="ScSetupScreen" position="center,center" size="840,570" title="Settings menu" flags="wfNoBorder">
+  <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
+  <ePixmap position="179,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/red.png" transparent="1" alphatest="on" />
+  <ePixmap position="433,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/green.png" transparent="1" alphatest="on" />
+  <widget name="red" position="178,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" backgroundColor="black" />
+  <widget name="green" position="433,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+  <widget name="config" position="125,88" size="550,140" font="Regular;20" enableWrapAround="1" transparent="1" />
+</screen>
+  <screen name="AutoCamListSetup" position="center,center" size="840,570" title="Auto-Camd List Setup" flags="wfNoBorder">
+  <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
+  <ePixmap position="40,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/red.png" transparent="1" alphatest="on" />
+  <ePixmap position="213,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/green.png" transparent="1" alphatest="on" />
+  <ePixmap position="387,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/yellow.png" transparent="1" alphatest="on" />
+  <ePixmap position="561,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/blue.png" transparent="1" alphatest="on" />
+  <widget name="key_red" position="40,498" zPosition="1" size="170,42" font="Regular;18" halign="center" valign="bottom" transparent="1" />
+  <widget name="key_green" position="213,498" zPosition="1" size="170,42" font="Regular;18" halign="center" valign="bottom" transparent="1" />
+  <widget name="key_yellow" position="387,498" zPosition="1" size="170,42" font="Regular;18" halign="center" valign="bottom" transparent="1" />
+  <widget name="key_blue" position="561,498" zPosition="1" size="170,42" font="Regular;18" halign="center" valign="bottom" transparent="1" />
+  <widget source="list" render="Listbox" position="83,71" size="660,310" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 5), size = (420, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (50, 30), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (430, 13), size = (140, 24), font = 0, flags = RT_HALIGN_LEFT, text = 2),
+					],
+				 "fonts": [gFont("Regular", 21), gFont("Regular", 16)],
+				 "itemHeight": 50
+				}
+			</convert>
+  </widget>
+</screen>
   <screen name="XTProcInfo" position="center,center" size="820,615" title="Running Process Info">
     <widget name="pibartit" zPosition="2" position="10,20" size="810,30" font="Regular;22" valign="center" transparent="1" foregroundColor="white" backgroundColor="transpBlack" />
     <widget name="infotext" position="10,70" size="810,605" font="Regular;20" />
