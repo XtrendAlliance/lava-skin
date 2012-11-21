@@ -1282,38 +1282,38 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="text" position="0,0" size="0,0" />
   </screen>
   <screen name="PositionerSetup" position="center,center" size="1100,605" title="Positioner setup..." flags="wfNoBorder">
-  <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Lava/menu/mainbg.png" />
-  <ePixmap position="9,10" size="297,53" pixmap="Lava/pictures/ctech logo.png" alphatest="on" />
-  <eLabel text="Positioner setup..." position="270, 20" size="800,43" font="Regular;35" halign="right" backgroundColor="white" transparent="1" />
-  <widget name="list" position="200, 80" size="700,180" itemHeight="30" selectionPixmap="Lava/menu/sel700x30.png" backgroundColor="background" transparent="1" />
-  <widget name="red" position=" 50,280" size="250,100" backgroundColor="red" halign="center" valign="center" font="Regular;21" />
-  <widget name="green" position="300,280" size="250,100" backgroundColor="green" halign="center" valign="center" font="Regular;21" />
-  <widget name="yellow" position="550,280" size="250,100" backgroundColor="yellow" halign="center" valign="center" font="Regular;21" />
-  <widget name="blue" position="800,280" size="250,100" backgroundColor="blue" halign="center" valign="center" font="Regular;21" />
-  <widget name="snr_db" position="300,415" size="200,25" halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="SNR:" position="210,450" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="snr_bar" position="300,452" size="200,21" borderWidth="1" transparent="1" />
-  <widget name="snr_percentage" position="520,450" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="BER:" position="210,485" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="ber_bar" position="300,487" size="200,21" borderWidth="1" transparent="1" />
-  <widget name="ber_value" position="520,485" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="Lock:" position="210,520" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="lock_state" position="300,520" size="200,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="Frequency:" position="620,450" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="frequency_value" position="780,450" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="Symbolrate:" position="620,485" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="symbolrate_value" position="780,485" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <eLabel text="FEC:" position="620,520" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  <widget name="fec_value" position="780,520" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Lava/menu/mainbg.png" />
+    <ePixmap position="9,10" size="297,53" pixmap="Lava/pictures/ctech logo.png" alphatest="on" />
+    <eLabel text="Positioner setup..." position="270, 20" size="800,43" font="Regular;35" halign="right" backgroundColor="white" transparent="1" />
+    <widget name="list" position="200, 80" size="700,180" itemHeight="30" selectionPixmap="Lava/menu/sel700x30.png" backgroundColor="background" transparent="1" />
+    <widget name="red" position=" 50,280" size="250,100" backgroundColor="red" halign="center" valign="center" font="Regular;21" />
+    <widget name="green" position="300,280" size="250,100" backgroundColor="green" halign="center" valign="center" font="Regular;21" />
+    <widget name="yellow" position="550,280" size="250,100" backgroundColor="yellow" halign="center" valign="center" font="Regular;21" />
+    <widget name="blue" position="800,280" size="250,100" backgroundColor="blue" halign="center" valign="center" font="Regular;21" />
+    <widget name="snr_db" position="300,415" size="200,25" halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="SNR:" position="210,450" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="snr_bar" position="300,452" size="200,21" borderWidth="1" transparent="1" />
+    <widget name="snr_percentage" position="520,450" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="BER:" position="210,485" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="ber_bar" position="300,487" size="200,21" borderWidth="1" transparent="1" />
+    <widget name="ber_value" position="520,485" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="Lock:" position="210,520" size=" 80,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="lock_state" position="300,520" size="200,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="Frequency:" position="620,450" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="frequency_value" position="780,450" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="Symbolrate:" position="620,485" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="symbolrate_value" position="780,485" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <eLabel text="FEC:" position="620,520" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
+    <widget name="fec_value" position="780,520" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Lava/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
-  <ePixmap pixmap="Lava/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
-  <ePixmap pixmap="Lava/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
-  <ePixmap pixmap="Lava/buttons/blue.png" position="830,570" size="35,27" alphatest="blend" />
-  <widget name="key_red" position="80, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-  <widget name="key_green" position="341, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-  <widget name="key_yellow" position="600, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-  <widget name="key_blue" position="880, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
-</screen>
+    <ePixmap pixmap="Lava/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/blue.png" position="830,570" size="35,27" alphatest="blend" />
+    <widget name="key_red" position="80, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="341, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="600, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="880, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
   <screen name="RecordPathsSettings" position="center,center" size=" 840,605" title="Recording paths..." flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Lava/menu/setupbg.png" />
     <ePixmap position="9,10" size="297,53" pixmap="Lava/pictures/ctech logo.png" alphatest="on" />
@@ -3056,18 +3056,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_blue" position="420,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   </screen>
   <screen name="ScNewSelection" position="center,center" size="840,570" title="Softcam Setup" flags="wfNoBorder">
-    <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
-    <widget name="cam" zPosition="2" position="85,26" size="310,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
-    <widget name="server" zPosition="2" position="413,28" size="328,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
-    <widget name="entries" position="99,50" size="630,200" enableWrapAround="1" transparent="1" />
-    <widget name="text" position="75,249" size="345,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
-    <widget name="text1" position="423,249" size="320,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
-    <ePixmap position="179,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
-    <ePixmap position="433,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/green.png" transparent="1" alphatest="on" />
-    <widget name="key_red" position="178,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
-    <widget name="key_green" position="433,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
-    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/key_menu.png" position="669,508" zPosition="2" size="50,40" alphatest="on" />
-  </screen>
+  <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
+  <widget name="cam" zPosition="2" position="85,26" size="310,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
+  <widget name="server" zPosition="2" position="413,28" size="328,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
+  <widget name="entries" position="99,50" size="630,200" enableWrapAround="1" transparent="1" />
+  <widget name="text" position="75,249" size="345,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
+  <widget name="text1" position="423,249" size="320,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
+  <ePixmap position="74,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
+  <ePixmap position="331,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/green.png" transparent="1" alphatest="on" />
+  <ePixmap position="574,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/blue.png" transparent="1" alphatest="on" />
+  <widget name="key_red" position="74,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+  <widget name="key_green" position="331,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+  <widget name="key_blue" position="574,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+  <ePixmap pixmap="Lava/pictures/press menu.png" position="746,462" zPosition="2" size="80,90" alphatest="on" />
+</screen>
   <screen name="ScSetupScreen" position="center,center" size="840,570" title="Settings menu" flags="wfNoBorder">
     <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
     <ePixmap position="179,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
