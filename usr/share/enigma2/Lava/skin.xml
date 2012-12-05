@@ -3056,20 +3056,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_blue" position="420,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   </screen>
   <screen name="ScNewSelection" position="center,center" size="840,570" title="Softcam Setup" flags="wfNoBorder">
-  <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
-  <widget name="cam" zPosition="2" position="85,26" size="310,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
-  <widget name="server" zPosition="2" position="413,28" size="328,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
-  <widget name="entries" position="99,50" size="630,200" enableWrapAround="1" transparent="1" />
-  <widget name="text" position="75,249" size="345,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
-  <widget name="text1" position="423,249" size="320,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
-  <ePixmap position="74,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
-  <ePixmap position="331,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/green.png" transparent="1" alphatest="on" />
-  <ePixmap position="574,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/blue.png" transparent="1" alphatest="on" />
-  <widget name="key_red" position="74,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
-  <widget name="key_green" position="331,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
-  <widget name="key_blue" position="574,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
-  <ePixmap pixmap="Lava/pictures/press menu.png" position="746,462" zPosition="2" size="80,90" alphatest="on" />
-</screen>
+    <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
+    <widget name="cam" zPosition="2" position="85,26" size="310,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
+    <widget name="server" zPosition="2" position="413,28" size="328,21" font="Regular; 17" halign="left" foregroundColor="unbab329" />
+    <widget name="entries" position="99,50" size="630,200" enableWrapAround="1" transparent="1" />
+    <widget name="text" position="75,249" size="345,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
+    <widget name="text1" position="423,249" size="320,260" zPosition="2" font="Regular;17" enableWrapAround="1" transparent="1" />
+    <ePixmap position="74,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
+    <ePixmap position="331,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/green.png" transparent="1" alphatest="on" />
+    <ePixmap position="574,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/blue.png" transparent="1" alphatest="on" />
+    <widget name="key_red" position="74,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+    <widget name="key_green" position="331,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+    <widget name="key_blue" position="574,511" zPosition="2" size="170,25" valign="center" halign="center" font="Regular;21" transparent="1" />
+    <ePixmap pixmap="Lava/pictures/press menu.png" position="746,462" zPosition="2" size="80,90" alphatest="on" />
+  </screen>
   <screen name="ScSetupScreen" position="center,center" size="840,570" title="Settings menu" flags="wfNoBorder">
     <ePixmap position="0,1" zPosition="-10" size="840,570" pixmap="Lava/menu/menubg.png" />
     <ePixmap position="179,544" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/red.png" transparent="1" alphatest="on" />
@@ -3288,12 +3288,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="lab1" position="20,400" size="100,32" font="Regular;24" valign="center" transparent="1" />
     <widget name="labstop" position="400,400" size="150,32" font="Regular;24" valign="center" halign="center" backgroundColor="red" />
     <widget name="labrun" position="400,400" size="150,32" zPosition="1" font="Regular;24" valign="center" halign="center" backgroundColor="green" />
-    <ePixmap position="680,180" size="250,40" pixmap="~/pictures/red.png" alphatest="on" zPosition="1" />
-    <ePixmap position="680,240" size="250,40" pixmap="~/pictures/green.png" alphatest="on" zPosition="1" />
-    <ePixmap position="680,300" size="250,40" pixmap="~/pictures/yellow.png" alphatest="on" zPosition="1" />
-    <widget name="key_red" position="680,188" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_green" position="680,248" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_yellow" position="680,308" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <ePixmap position="682,185" size="250,40" pixmap="~/pictures/small_red.png" alphatest="on" zPosition="1" />
+    <ePixmap position="682,266" size="250,40" pixmap="~/pictures/small_green.png" alphatest="on" zPosition="1" />
+    <ePixmap position="682,347" size="250,40" pixmap="~/pictures/small_yellow.png" alphatest="on" zPosition="1" />
+    <widget name="key_red" position="626,144" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="key_green" position="628,225" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="key_yellow" position="630,307" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="ECMBluePanel" position="0,0" size="1280,720" title="ECM Infos" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="-1,4" zPosition="-1" size="1278,720" pixmap="~/pictures/frame_1.1-fs8.png" />
