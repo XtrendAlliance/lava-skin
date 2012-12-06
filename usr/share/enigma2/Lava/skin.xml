@@ -178,8 +178,8 @@
     </widget>
     <eLabel text="SNR:" position="879,134" size="47, 22" font="Regular;17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="927,134" size="50, 22" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1">
-  <convert type="FrontendInfo">SNR</convert>
-</widget>
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
     <eLabel text="AGC:" position="1006,135" size="45,22" font="Regular; 17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
     <widget source="session.FrontendStatus" render="Label" position="1051,134" size="52, 22" font="Regular; 17" backgroundColor="background" foregroundColor="grey" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
@@ -236,16 +236,16 @@
     <ePixmap position="center,0" zPosition="-1" size="1280,503" pixmap="Lava/menu/secondinfobar back.png" />
     <eLabel name="snr" position="555,45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR" font="Regular;14" />
     <widget source="session.FrontendStatus" render="Progress" pixmap="Lava/bar_snr.png" position="630,45" size="410,20" borderWidth="2" borderColor="grey">
-  <convert type="FrontendInfo">SNR</convert>
-</widget>
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
     <widget source="session.FrontendStatus" render="Label" position="1044,45" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <eLabel name="agc" position="555,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  AGC" font="Regular;14" />
     <!--widget source="session.FrontendStatus" render="Progress" pixmap="PLi-HD/infobar/bar_agc.png" position="630,75" size="410,20" borderWidth="2" borderColor="grey"-->
     <widget source="session.FrontendStatus" render="Progress" pixmap="Lava/bar_agc.png" position="630,75" size="410,20" borderWidth="2" borderColor="grey">
-  <convert type="FrontendInfo">AGC</convert>
-</widget>
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
     <widget source="session.FrontendStatus" render="Label" position="1044,75" size="80,28" backgroundColor="transpBlack" transparent="1" halign="center" font="Regular;14">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
@@ -712,7 +712,7 @@
     <widget source="ServiceEvent" render="Progress" position="900,167" size="140,12" borderWidth="1" backgroundColor="background" borderColor="grey" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="745, 195" size="330,361" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+    <widget source="ServiceEvent" render="Label" position="745, 195" size="330,305" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <ePixmap pixmap="Lava/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
@@ -723,6 +723,7 @@
     <widget name="key_green" position="341, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="600, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="880, 573" size="200,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget source="ServiceEvent" render="NextEpgInfo" position="744,504" size="333,66" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" />
   </screen>
   <screen name="ChannelSelectionRadio" position="center,60" size="1100,470" title="Channel Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,470" pixmap="Lava/menu/mainbg.png" />
