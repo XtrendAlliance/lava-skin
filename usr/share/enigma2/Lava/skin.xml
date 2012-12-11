@@ -3439,4 +3439,15 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
                     }
             </convert>
     </widget>
-    <widget source="menu" render="Listbox" position="550,350" size="610,250" zPosition="3" scrollbarM
+    <widget source="menu" render="Listbox" position="550,350" size="610,250" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
+                {"template": [
+                        MultiContentEntryText(pos = (0, 0), size = (610, 250), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 0 is the MenuText,
+                    ],
+                "fonts": [gFont("Regular", 19)],
+                "itemHeight": 250
+                }
+            </convert>
+    </widget>
+  </screen>
+</skin>
