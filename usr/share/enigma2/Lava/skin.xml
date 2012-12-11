@@ -101,14 +101,14 @@
   </windowstyle>
   <screen name="InfoBar" position="70,530" size="1140,160" title="InfoBar" flags="wfNoBorder">
     <ePixmap position="0,  0" zPosition="-2" size="1140,160" pixmap="Lava/infobar.png" />
-    <ePixmap position="12, 128" zPosition="-1" size="1113, 33" pixmap="Lava/extra.png" />
+    <ePixmap position="12,127" zPosition="-1" size="1113, 33" pixmap="Lava/extra.png" />
     <ePixmap position=" 20,18" size="57,20" zPosition="1" pixmap="Lava/icons/ico_dolby_off.png" alphatest="blend" />
     <widget source="session.CurrentService" render="Pixmap" position=" 20,18" size="57,20" zPosition="2" pixmap="Lava/icons/ico_dolby_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position=" 90,17" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position=" 90,17" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
+    <ePixmap position="90,18" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="90,18" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -117,117 +117,117 @@
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="140,17" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="140,17" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
+    <ePixmap position="140,18" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="140,18" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="187,17" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="187,17" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
+    <ePixmap position="187,18" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="187,18" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="230,17" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="230,17" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
+    <ePixmap position="230,18" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="230,18" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="363,7" size="580,36" font="Regular;26" valign="top" noWrap="1" backgroundColor="black" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="330,6" size="506,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <eLabel position="960,106" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="769,131" size="65,20" font="Regular;18" foregroundColor="dark" backgroundColor="black" transparent="1">
+    <eLabel position="1089,82" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="23,132" size="65,22" font="Regular; 17" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="769,131" size="65,20" font="Regular;18" foregroundColor="dark" backgroundColor="black" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="23,132" size="65,22" font="Regular; 17" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="769,131" size="65,20" font="Regular;18" foregroundColor="dark" backgroundColor="black" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="23,132" size="65,22" font="Regular; 17" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="A" position="22,132" zPosition="1" size="15,20" font="Regular;18" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-    <eLabel text="B" position="44,132" zPosition="1" size="15,20" font="Regular;18" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-    <eLabel text="C" position="69,132" zPosition="1" size="15,20" font="Regular;18" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-    <eLabel text="D" position="94,132" zPosition="1" size="15,20" font="Regular;18" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="22,132" zPosition="3" size="15,20" font="Regular;18" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+    <eLabel text="A" position="95,132" zPosition="1" size="15,22" font="Regular; 17" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+    <eLabel text="B" position="114,132" zPosition="1" size="15,22" font="Regular; 17" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+    <eLabel text="C" position="133,132" zPosition="1" size="15,22" font="Regular; 17" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+    <eLabel text="D" position="152,132" zPosition="1" size="15,22" font="Regular; 17" halign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" />
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="95,132" zPosition="3" size="15,22" font="Regular; 17" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="44,132" zPosition="3" size="15,20" font="Regular;18" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="114,132" zPosition="3" size="15,22" font="Regular; 17" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="69,132" zPosition="3" size="15,20" font="Regular;18" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="133,132" zPosition="3" size="15,22" font="Regular; 17" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="94,133" zPosition="3" size="15,20" font="Regular;18" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="152,132" zPosition="3" size="15,22" font="Regular; 17" halign="center" foregroundColor="green" backgroundColor="black" transparent="1">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <eLabel text="SNR:" position="879,134" size="47, 22" font="Regular;17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
-    <widget source="session.FrontendStatus" render="Label" position="927,134" size="50, 22" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1">
+    <eLabel text="SNR:" position="910,132" size="43,22" font="Regular;17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="958,132" size="52,22" font="Regular;17" backgroundColor="background" foregroundColor="grey" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel text="AGC:" position="1006,135" size="45,22" font="Regular; 17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1051,134" size="52, 22" font="Regular; 17" backgroundColor="background" foregroundColor="grey" transparent="1">
+    <eLabel text="AGC:" position="1017,132" size="43,22" font="Regular; 17" backgroundColor="background" foregroundColor="yellow" transparent="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1065,132" size="52,22" font="Regular; 17" backgroundColor="background" foregroundColor="grey" transparent="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="session.RecordState" render="Pixmap" position="869, 6" size=" 20,20" pixmap="Lava/icons/ico_rec_on.png" alphatest="blend">
+    <widget source="session.RecordState" render="Pixmap" position="879,15" size="20,20" pixmap="Lava/icons/ico_rec_on.png" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="526,129" size="82, 25" font="Regular;23" halign="left" backgroundColor="black" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1046,12" size="82,25" font="Regular; 23" halign="center" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="984,14" size="140,25" font="Regular;23" halign="right" backgroundColor="black" foregroundColor="grey" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="902,12" size="140,25" font="Regular; 22" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" valign="center">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" position="  10,49" size="1120,8" pixmap="Lava/progress.png" transparent="1">
+    <widget source="session.Event_Now" render="Progress" position="10,48" size="1120,8" pixmap="Lava/progress.png" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.CurrentService" render="Picon" position="30, 66" size=" 100,60" transparent="1" alphatest="blend">
+    <widget source="session.CurrentService" render="Picon" position="33,64" size=" 100,60" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="150, 67" size=" 75,28" font="Arial;24" halign="right" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="150,66" size=" 75,28" font="Arial;24" halign="right" backgroundColor="black" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="225, 67" size=" 20,28" font="Arial;24" halign="center" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="245, 67" size=" 75,28" font="Arial;24" halign="left" backgroundColor="black" transparent="1">
+    <eLabel text="-" position="225,66" size=" 20,28" font="Arial;24" halign="center" backgroundColor="black" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="245,66" size=" 75,28" font="Arial;24" halign="left" backgroundColor="black" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="330, 61" size="640,32" font="Regular;26" halign="left" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="328,66" size="630,28" font="Regular;26" halign="left" backgroundColor="black" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="963,63" size="110,28" font="Regular;24" halign="right" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="964,66" size="110,28" font="Regular;24" halign="right" backgroundColor="black" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="150, 97" size=" 75,28" font="Arial;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="150,96" size=" 75,28" font="Arial;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="225, 97" size=" 20,28" font="Arial;24" halign="center" foregroundColor="darkgrey" backgroundColor="white" transparent="1" />
-    <widget source="session.Event_Next" render="Label" position="245, 97" size=" 75,28" font="Arial;24" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <eLabel text="-" position="225,96" size=" 20,28" font="Arial;24" halign="center" foregroundColor="darkgrey" backgroundColor="white" transparent="1" />
+    <widget source="session.Event_Next" render="Label" position="245,96" size=" 75,28" font="Arial;24" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="330, 93" size="640,32" font="Regular;26" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="328,96" size="630,28" font="Regular;26" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1" zPosition="0">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="964,95" size="110,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="964,96" size="110,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -3439,15 +3439,4 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
                     }
             </convert>
     </widget>
-    <widget source="menu" render="Listbox" position="550,350" size="610,250" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-      <convert type="TemplatedMultiContent">
-                {"template": [
-                        MultiContentEntryText(pos = (0, 0), size = (610, 250), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 0 is the MenuText,
-                    ],
-                "fonts": [gFont("Regular", 19)],
-                "itemHeight": 250
-                }
-            </convert>
-    </widget>
-  </screen>
-</skin>
+    <widget source="menu" render="Listbox" position="550,350" size="610,250" zPosition="3" scrollbarM
