@@ -353,7 +353,7 @@
     <widget source="session.CurrentService" render="Label" position="51,180" size="826,24" font="Regular; 20" backgroundColor="black" foregroundColor="white" transparent="1" halign="left" valign="center" zPosition="0">
       <convert type="PliExtraInfo">ServiceInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="51,240" size="637,24" font="Regular; 20" backgroundColor="black" transparent="1" halign="left" valign="center" foregroundColor="white">
+    <widget source="session.CurrentService" render="Label" position="171,241" size="637,24" font="Regular; 20" backgroundColor="black" transparent="1" halign="left" valign="center" foregroundColor="white">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <eLabel text="Now:" position="51,280" size="63,26" zPosition="2" font="Regular; 22" foregroundColor="white" transparent="1" backgroundColor="background" />
@@ -371,6 +371,10 @@
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <!--panel name="InfoBarTemplate" /-->
+    <widget source="session.CurrentService" render="Label" position="51,241" size="119,24" font="Regular; 20" zPosition="1" backgroundColor="background" transparent="1">
+  <convert type="CamName">
+  </convert>
+</widget>
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="40,30" zPosition="-10" size="1200,660" pixmap="Lava/menu/mpbg.png" alphatest="on" />
