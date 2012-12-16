@@ -372,9 +372,9 @@
     </widget>
     <!--panel name="InfoBarTemplate" /-->
     <widget source="session.CurrentService" render="Label" position="51,241" size="119,24" font="Regular; 20" zPosition="1" backgroundColor="background" transparent="1">
-  <convert type="CamName">
-  </convert>
-</widget>
+      <convert type="CamName">
+      </convert>
+    </widget>
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="40,30" zPosition="-10" size="1200,660" pixmap="Lava/menu/mpbg.png" alphatest="on" />
@@ -530,6 +530,10 @@
 				"itemHeight": 40
 				}
 			</convert>
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="Lava/menu/xta.png" position="26,141" size="250,297" alphatest="on">
+			<convert type="MenuEntryCompare">XTMainMenu</convert>
+			<convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="Lava/menu/sub.png" position="26,141" size="250,297">
       <convert type="MenuEntryCompare">subtitle_selection</convert>
@@ -3453,5 +3457,74 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
                 }
             </convert>
     </widget>
+  </screen>
+  <screen name="AutoBouquetsMenu" position="center,center" size="1100,605" title="AutoBouquets Setup" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Lava/menu/setupbg.png" />
+    <ePixmap pixmap="skin_default/buttons/red.png" position="403,534" size="140,40" alphatest="on" />
+    <ePixmap pixmap="skin_default/buttons/green.png" position="665,530" size="140,40" alphatest="on" />
+    <widget name="key_red" position="401,491" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" transparent="1" />
+    <widget name="key_green" position="664,488" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="un1f771f" transparent="1" />
+    <widget name="config" position="330,223" size="480,150" scrollbarMode="showOnDemand" />
+  </screen>
+  <!-- AutoBouquetsMaker Ordening Screen -->
+  <screen name="AutoBouquetsMaker_Ordering" position="center,center" size=" 840,570" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Lava/menu/setupbg.png" />
+    <widget source="Title" render="Label" position="270,15" size="540,43" font="Regular;35" halign="right" backgroundColor="black" transparent="1" />
+    <widget source="list" render="Listbox" position="25,82" size="789,443" scrollbarMode="showOnDemand" transparent="1">
+  <convert type="TemplatedMultiContent">
+					{"template": [
+						MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+						],
+						"fonts": [gFont("Regular", 22)],
+						"itemHeight": 30
+					}
+				</convert>
+</widget>
+    <widget name="pleasewait" position="24,81" size="790,140" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Lava/buttons/red.png" position="30,530" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/green.png" position="220,530" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/yellow.png" position="400,530" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/blue.png" position="580,530" size="35,27" alphatest="blend" />
+    <widget name="key_red" render="Label" position="80,533" size="130,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" render="Label" position="260,533" size="130,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" render="Label" position="440,533" size="130,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" render="Label" position="620,533" size="130,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  </screen>
+  <!-- AutoBouquetsMaker Menu Screen -->
+  <screen name="AutoBouquetsMaker_Menu" position="center,center" size=" 840,570" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Lava/menu/setupbg.png" />
+    <widget source="Title" render="Label" position="270,15" size="540,43" font="Regular;35" halign="right" backgroundColor="black" transparent="1" />
+    <widget source="list" render="Listbox" position="30,81" size="780,450" font="Regular;16" scrollbarMode="showOnDemand" transparent="1" backgroundColorSelected="grey" foregroundColorSelected="black">
+      <convert type="TemplatedMultiContent">
+	{"template": [
+		MultiContentEntryPixmapAlphaTest(pos = (12, 4), size = (32, 32), png = 0),
+		MultiContentEntryText(pos = (58, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		],
+		"fonts": [gFont("Regular", 24)],
+		"itemHeight": 40
+		}
+    </convert>
+    </widget>
+  </screen>
+  <!-- AutoBouquetsMaker Hide Screen -->
+  <screen name="AutoBouquetsMaker_HideSections" position="center,center" size=" 840,570" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Lava/menu/setupbg.png" />
+    <widget source="Title" render="Label" position="270,15" size="540,43" font="Regular;35" halign="right" backgroundColor="black" transparent="1" />
+    <widget source="list" render="Listbox" position="30,81" size="780,450" font="Regular;16" scrollbarMode="showOnDemand" transparent="1" backgroundColorSelected="grey" foregroundColorSelected="black">
+      <convert type="TemplatedMultiContent">
+	{"template": [
+		MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+		MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+		MultiContentEntryText(pos = (450, 0), size = (300, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+		],
+		"fonts": [gFont("Regular", 24)],
+		"itemHeight": 30
+		}
+    </convert>
+    </widget>
+    <ePixmap pixmap="Lava/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Lava/buttons/green.png" position="226,570" size="35,27" alphatest="blend" />
+    <widget name="key_red" position=" 80,573" size="132,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="280,573" size="141,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
 </skin>
