@@ -133,7 +133,7 @@
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="330,6" size="506,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="center">
+    <widget source="session.CurrentService" render="Label" position="396,5" size="506,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel position="1089,82" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
@@ -231,6 +231,8 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
+    <widget source="session.CurrentService" render="ChannelNumber" position="323,5" size="72,36" font="Regular;26" valign="center" halign="left" noWrap="1" backgroundColor="black" foregroundColor="white" transparent="1">
+</widget>
   </screen>
   <screen name="SecondInfoBar" position="center,10" size="1280,503" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="center,0" zPosition="-1" size="1280,503" pixmap="Lava/menu/secondinfobar back.png" />
@@ -530,10 +532,6 @@
 				"itemHeight": 40
 				}
 			</convert>
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Lava/menu/xta.png" position="26,141" size="250,297" alphatest="on">
-			<convert type="MenuEntryCompare">XTMainMenu</convert>
-			<convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="Lava/menu/sub.png" position="26,141" size="250,297">
       <convert type="MenuEntryCompare">subtitle_selection</convert>
@@ -3471,7 +3469,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Lava/menu/setupbg.png" />
     <widget source="Title" render="Label" position="270,15" size="540,43" font="Regular;35" halign="right" backgroundColor="black" transparent="1" />
     <widget source="list" render="Listbox" position="25,82" size="789,443" scrollbarMode="showOnDemand" transparent="1">
-  <convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 					{"template": [
 						MultiContentEntryText(pos = (12, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
 						],
@@ -3479,7 +3477,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 						"itemHeight": 30
 					}
 				</convert>
-</widget>
+    </widget>
     <widget name="pleasewait" position="24,81" size="790,140" font="Regular;18" halign="center" valign="center" transparent="1" zPosition="1" />
     <ePixmap pixmap="Lava/buttons/red.png" position="30,530" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Lava/buttons/green.png" position="220,530" size="35,27" alphatest="blend" />
