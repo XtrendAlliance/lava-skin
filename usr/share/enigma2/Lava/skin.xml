@@ -232,7 +232,7 @@
       <convert type="ClockToText">InMinutes</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" position="323,5" size="72,36" font="Regular;26" valign="center" halign="left" noWrap="1" backgroundColor="black" foregroundColor="white" transparent="1">
-</widget>
+    </widget>
   </screen>
   <screen name="SecondInfoBar" position="center,10" size="1280,503" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="center,0" zPosition="-1" size="1280,503" pixmap="Lava/menu/secondinfobar back.png" />
