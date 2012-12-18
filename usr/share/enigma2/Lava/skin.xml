@@ -102,41 +102,41 @@
   <screen name="InfoBar" position="70,530" size="1140,160" title="InfoBar" flags="wfNoBorder">
     <ePixmap position="0,  0" zPosition="-2" size="1140,160" pixmap="Lava/infobar.png" />
     <ePixmap position="12,127" zPosition="-1" size="1113, 33" pixmap="Lava/extra.png" />
-    <ePixmap position=" 20,18" size="57,20" zPosition="1" pixmap="Lava/icons/ico_dolby_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position=" 20,18" size="57,20" zPosition="2" pixmap="Lava/icons/ico_dolby_on.png" alphatest="blend">
+    <ePixmap position="20,16" size="57,20" zPosition="1" pixmap="Lava/icons/ico_dolby_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="20,16" size="57,20" zPosition="2" pixmap="Lava/icons/ico_dolby_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="90,18" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="90,18" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
+    <ePixmap position="89,16" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="89,16" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="274,18" size="49,20" zPosition="1" pixmap="Lava/icons/ico_hbbtv_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="274,18" size="49,20" zPosition="2" pixmap="Lava/icons/ico_hbbtv_on.png" alphatest="blend">
+    <ePixmap position="261,16" size="49,20" zPosition="1" pixmap="Lava/icons/ico_hbbtv_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="261,16" size="49,20" zPosition="2" pixmap="Lava/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="140,18" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="140,18" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
+    <ePixmap position="137,16" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="137,16" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="187,18" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="187,18" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
+    <ePixmap position="182,16" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="182,16" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="230,18" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="230,18" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
+    <ePixmap position="223,16" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="223,16" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="396,5" size="506,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="center">
+    <widget source="session.CurrentService" render="Label" position="405,6" size="470,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="left" foregroundColor="yellow">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <eLabel position="1089,82" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
+    <eLabel position="1105,81" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
     <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="23,132" size="65,22" font="Regular; 17" foregroundColor="blue" backgroundColor="black" transparent="1" halign="center">
       <convert type="FrontendInfo">TYPE</convert>
       <convert type="ValueRange">0,0</convert>
@@ -199,39 +199,39 @@
     <widget source="session.CurrentService" render="Picon" position="33,64" size=" 100,60" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="150,66" size=" 75,28" font="Arial;24" halign="right" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="142,66" size="79,28" font="Arial; 26" halign="right" backgroundColor="black" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="225,66" size=" 20,28" font="Arial;24" halign="center" backgroundColor="black" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="245,66" size=" 75,28" font="Arial;24" halign="left" backgroundColor="black" transparent="1">
+    <eLabel text="-" position="221,66" size=" 20,28" font="Arial; 26" halign="center" backgroundColor="black" transparent="1" />
+    <widget source="session.Event_Now" render="Label" position="241,66" size="79,28" font="Arial; 26" halign="left" backgroundColor="black" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="328,66" size="630,28" font="Regular;26" halign="left" backgroundColor="black" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="964,66" size="110,28" font="Regular;24" halign="right" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="964,66" size="116,28" font="Regular; 26" halign="right" backgroundColor="black" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="150,96" size=" 75,28" font="Arial;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="142,96" size="79,28" font="Arial; 26" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <eLabel text="-" position="225,96" size=" 20,28" font="Arial;24" halign="center" foregroundColor="darkgrey" backgroundColor="white" transparent="1" />
-    <widget source="session.Event_Next" render="Label" position="245,96" size=" 75,28" font="Arial;24" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <eLabel text="-" position="221,96" size=" 20,28" font="Arial; 26" halign="center" foregroundColor="darkgrey" backgroundColor="white" transparent="1" />
+    <widget source="session.Event_Next" render="Label" position="241,96" size="79,28" font="Arial; 26" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="328,96" size="630,28" font="Regular;26" halign="left" foregroundColor="darkgrey" backgroundColor="black" transparent="1" zPosition="0">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="964,96" size="110,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="964,96" size="116,28" font="Regular; 26" halign="right" foregroundColor="darkgrey" backgroundColor="black" transparent="1">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" position="323,5" size="72,36" font="Regular;26" valign="center" halign="left" noWrap="1" backgroundColor="black" foregroundColor="white" transparent="1">
+    <widget source="session.CurrentService" render="ChannelNumber" position="328,6" size="72,36" font="Regular;26" valign="center" halign="left" noWrap="1" backgroundColor="black" foregroundColor="white" transparent="1">
     </widget>
   </screen>
   <screen name="SecondInfoBar" position="center,10" size="1280,503" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
@@ -532,6 +532,10 @@
 				"itemHeight": 40
 				}
 			</convert>
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="Lava/menu/xta.png" position="26,141" size="250,297" alphatest="on">
+      <convert type="MenuEntryCompare">XTMainMenu</convert>
+      <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="Lava/menu/sub.png" position="26,141" size="250,297">
       <convert type="MenuEntryCompare">subtitle_selection</convert>
