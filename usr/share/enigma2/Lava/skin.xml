@@ -1576,15 +1576,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="TimeshiftState" position="70,30" size="1140,68" title="TimeshiftState" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-1" size="1140,68" pixmap="Lava/tsbg.png" />
-    <widget name="state" position="30, 13" size="150,27" font="Arial;22" halign="center" backgroundColor="black" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="180, 15" size="150,27" font="Arial;22" halign="left" backgroundColor="black" transparent="1">
+    <widget name="state" position="30,18" size="150,27" font="Arial;22" halign="center" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="180,20" size="150,27" font="Arial;22" halign="left" backgroundColor="black" transparent="1">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position=" 920, 15" size=" 80,27" font="Arial;22" halign="right" backgroundColor="black" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="920,20" size=" 80,27" font="Arial;22" halign="right" backgroundColor="black" transparent="1">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <eLabel text="/" position="1010, 15" size=" 10,27" font="Arial;22" halign="center" backgroundColor="black" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1030, 15" size=" 80,27" font="Arial;22" halign="left" backgroundColor="black" transparent="1">
+    <eLabel text="/" position="1010,20" size=" 10,27" font="Arial;22" halign="center" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1030,20" size=" 80,27" font="Arial;22" halign="left" backgroundColor="black" transparent="1">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <widget source="session.CurrentService" render="Progress" position="  10,49" size="1120,8" pixmap="Lava/progress.png" transparent="1">
