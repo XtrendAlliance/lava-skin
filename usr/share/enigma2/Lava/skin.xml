@@ -3529,4 +3529,13 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_red" position=" 80,573" size="132,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_green" position="280,573" size="141,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
+  <screen name="Downloads" position="center,center" size="840,605" title="AutoBouquets Setup" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Lava/menu/setupbg.png" />
+   <eLabel text="XTREND support Team" position="17,20" size="400,36" font="Regular;32" halign="left" foregroundColor="white" transparent="1" />
+  <!--widget name="text" position="0,0" size="550,25" font="Regular;20" /-->
+  <widget name="list" position="25,119" size="500,350" scrollbarMode="showOnDemand" transparent="1" />
+  <!--widget name="pixmap" position="200,0" size="190,250" /-->
+  <!--eLabel position="70,100" zPosition="-1" size="100,69" backgroundColor="#222222" /-->
+  <widget name="info" position="42,136" zPosition="4" size="350,300" font="Regular;18" foregroundColor="white" transparent="1" halign="left" valign="center" />
+</screen>
 </skin>
