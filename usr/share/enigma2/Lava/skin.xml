@@ -103,38 +103,38 @@
   <screen name="InfoBar" position="70,530" size="1140,160" title="InfoBar" flags="wfNoBorder">
     <ePixmap position="0,  0" zPosition="-2" size="1140,160" pixmap="Lava/infobar.png" />
     <ePixmap position="12,127" zPosition="-1" size="1113, 33" pixmap="Lava/extra.png" />
-    <ePixmap position="20,16" size="57,20" zPosition="1" pixmap="Lava/icons/ico_dolby_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="20,16" size="57,20" zPosition="2" pixmap="Lava/icons/ico_dolby_on.png" alphatest="blend">
+    <ePixmap position="332,132" size="57,20" zPosition="1" pixmap="Lava/icons/ico_dolby_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="332,132" size="57,20" zPosition="2" pixmap="Lava/icons/ico_dolby_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="89,16" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="89,16" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
+    <ePixmap position="401,132" size="36,20" zPosition="1" pixmap="Lava/icons/ico_format_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="401,132" size="36,20" zPosition="2" pixmap="Lava/icons/ico_format_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="261,16" size="49,20" zPosition="1" pixmap="Lava/icons/ico_hbbtv_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="261,16" size="49,20" zPosition="2" pixmap="Lava/icons/ico_hbbtv_on.png" alphatest="blend">
+    <ePixmap position="573,132" size="49,20" zPosition="1" pixmap="Lava/icons/ico_hbbtv_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="573,132" size="49,20" zPosition="2" pixmap="Lava/icons/ico_hbbtv_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasHBBTV</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="137,16" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="137,16" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
+    <ePixmap position="449,132" size="33,20" zPosition="1" pixmap="Lava/icons/ico_txt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="449,132" size="33,20" zPosition="2" pixmap="Lava/icons/ico_txt_on.png" alphatest="blend">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="182,16" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="182,16" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
+    <ePixmap position="494,132" size="29,20" zPosition="1" pixmap="Lava/icons/ico_hd_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="494,132" size="29,20" zPosition="2" pixmap="Lava/icons/ico_hd_on.png" alphatest="blend">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <ePixmap position="223,16" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
-    <widget source="session.CurrentService" render="Pixmap" position="223,16" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
+    <ePixmap position="535,132" size="26,20" zPosition="1" pixmap="Lava/icons/ico_crypt_off.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="535,132" size="26,20" zPosition="2" pixmap="Lava/icons/ico_crypt_on.png" alphatest="blend">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="405,6" size="470,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="left" foregroundColor="yellow">
+    <widget source="session.CurrentService" render="Label" position="328,5" size="549,36" font="Regular;26" valign="center" noWrap="1" backgroundColor="black" transparent="1" halign="left" foregroundColor="yellow">
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel position="1105,81" size=" 10,28" font="Regular;24" halign="right" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" />
@@ -232,8 +232,8 @@
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" position="313,6" size="87,36" font="Regular;26" valign="center" halign="left" noWrap="1" backgroundColor="black" foregroundColor="white" transparent="1">
-    </widget>
+    <widget source="session.CurrentService" render="ChannelNumber" position="187,5" size="88,36" font="Regular;26" valign="center" halign="center" noWrap="1" backgroundColor="black" foregroundColor="yellow" transparent="1">
+</widget>
   </screen>
   <screen name="SecondInfoBar" position="center,10" size="1280,503" title="Second InfoBar" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="center,0" zPosition="-1" size="1280,503" pixmap="Lava/menu/secondinfobar back.png" />
